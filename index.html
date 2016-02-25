@@ -50,10 +50,6 @@
           <p>Some apresentations here</p>
         </section>
 
-        <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-          <h2>Gif =D</h2>
-        </section>
-
         <section>
           <section>
             <h2>First things first...</h2>
@@ -69,7 +65,6 @@
 					<h2> About CSS and W3C</h2>
 				</section>
         <section>
-          <section>
             <h2>Borders</h2>
             <section>
               <h3>Multiples - Box-shadow</h3>
@@ -108,24 +103,126 @@
         </section>
 
         <section>
-          <h2>Speaker View</h2>
-          <p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-          <p>Press the <em>S</em> key to try it out.</p>
-
-          <aside class="notes">
-            Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-          </aside>
+          <h2>User Experience</h2>
+          Picking the right cursor
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+:disabled, [disabled], [aria-disabled="true"] {
+  cursor: not-allowed;
+}
+            </code>
+          </pre>
+          <a href="http://dabblet.com/gist/41c8da81742e1ab1d07f">code sample</a>
         </section>
 
-        <section style="text-align: left;">
-          <h1>THE END</h1>
-          <p>
-            - <a href="http://slides.com">Try the online editor</a> <br>
-            - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-          </p>
+        <section>
+          <h2>:checked || [checked]</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+input:checked
+input[checked]
+            </code>
+          </pre>
+          <a href="http://dabblet.com/gist/e269f10328615254e29e">code sample</a>
         </section>
 
-      </div>
+        <section>
+          <h2>::backdrop</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              ::backdrop
+            </code>
+          </pre>
+          <a href="http://dabblet.com/gist/bb2121aea259be94c35d">code sample</a>
+        </section>
+
+        <section>
+          <h2>component modal</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+
+<button onclick="document.querySelector('#modal').showModal()">Click</button>
+
+<dialog id="modal">
+  O HAI!
+  <button onclick="this.parentNode.close()">Close</button>
+</dialog>
+
+            </code>
+          </pre>
+
+          <a href="http://dabblet.com/gist/1326eb460b0dff91d638">code sample</a>
+        </section>
+
+        <section>
+          <h2>Intrinsic sizing</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              max-width: min-content;
+            </code>
+          </pre>
+          <a href="http://dabblet.com/gist/82eb1575806f6eff9c37">code sample</a>
+        </section>
+
+        <section>
+          <h2>Fluid background, fixed content</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              padding: 1em calc(50% - 350px);
+            </code>
+          </pre>
+
+          <a href="http://dabblet.com/gist/763229b68fa27c5c1bfa">code sample</a>
+        </section>
+
+        <section>
+          <h2>Vertical Centering</h2>
+
+          <h3>
+            Using position absolute and translate
+            <br><small><a href="http://dabblet.com/gist/cd12fac0e18bb27fb62d">code sample</a></small>
+          </h3>
+
+          <h3>
+            Using vh
+            <br><small><a href="http://dabblet.com/gist/bf12b39d8f5da2b6e5b6">code sample</a></small>
+          </h3>
+
+          <h3>
+            Flexbox solution
+            <br><small><a href="http://dabblet.com/gist/8aa9aa04ee57f479c513">code sample</a></small>
+          </h3>
+        </section>
+
+        <section>
+          <h2>Typing Animation</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              ch unit
+            </code>
+          </pre>
+          <a href="http://dabblet.com/gist/b04ab9f41084b0a66960">code sample</a>
+        </section>
+
+				<section>
+					<h1>Thanks</h1>
+          <a href="https://twitter.com/raffesmind">@raffesmind</a><br>
+          <a href="https://twitter.com/eduardojmatos">@eduardojmatos</a>
+				</section>
+
+        <section>
+          <h2>FrontendBR</h2>
+          Portando discussões feitas em grupos (Facebook, Google Groups, Slack, Disqus) pra issues.
+          <a href="https://github.com/frontendbr/forum">https://github.com/frontendbr/forum</a>
+        </section>
+
+        <section>
+          <h2>We are hiring ;)</h2>
+          <img src="https://www.bankfacil.com.br/assets/logo-bankfacil-white-89b47fc55a69ab150867deec223d22fe.png" alt="" style="border:none;background:none;box-shadow:none">
+          <a href="https://github.com/frontendbr/vagas/issues/16">https://github.com/frontendbr/vagas/issues/16</a>
+        </section>
+
+			</div>
 
     </div>
 
